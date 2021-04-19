@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './core/models/user';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tc2-exercice1';
+
+  readonly user: User = {
+    name: 'Jeiferson de Almeida',
+    email: 'jeifersonalmeida@teste.com.br',
+    birthday: new Date(1999, 0, 8),
+  };
+
 }
