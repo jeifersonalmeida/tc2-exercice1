@@ -1,1 +1,2 @@
-<app-user-info [user]="user"></app-user-info>
+<h3>Usuários:</h3>
+<app-user-info *ngFor="let user of users" [user]="user"></app-user-info>
